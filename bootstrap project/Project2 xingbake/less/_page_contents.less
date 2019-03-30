@@ -1,0 +1,432 @@
+//
+// Page Contents
+// --------------------------
+
+a:hover{
+	text-decoration:none !important;
+}
+
+.nav-box{
+	width:100%;
+	text-align:left;
+	header{
+		display:block;
+		padding:24px;
+		position:relative;
+		.logo{
+			width:36px;
+			height:36px;
+			float:left;
+			margin-right:12px;
+			position:relative;
+			z-index:500;
+			> img{
+				max-width:100%;
+				max-height:100%;
+			}
+		}
+		.menu{
+			float:left;
+			> a{
+				float:left;
+				display:block;
+				font-weight:700;
+				font-size:1.6rem;
+				padding:5px 12px;
+				line-height:25px;
+				color:#333;
+			}
+		}
+		.menu-down{
+			float:right;
+			padding:6px 0;
+		}
+	}
+	//登录区
+	.title-land-wrapper{
+		margin-top:400px;
+		margin-left:100px;
+		>span{
+			display:block;
+			font-size: 2.6rem;
+    		font-weight: 700;
+    		margin-bottom:24px;
+		}
+		a{
+			color:#00a862;
+			font-size:1.6rem;
+			margin-right:24px;
+		}
+		.register{
+			border: 1px solid #00A862;
+    		border-radius: 48px;
+    		padding:6px 13px;
+		}
+	}
+}
+
+// 导航菜单
+.menues{
+	ul{
+		padding:40px 24px 0 84px;
+		list-style:none;
+		li>a{
+			display:block;
+			padding: 8px 0;
+			font-size: 1.8rem;
+    		line-height: 120%;
+    		font-weight:600;
+    		color:#444;
+		}
+		.line{
+			margin:8px 0;
+			height:1px;
+			background-color:#ccc;
+		}
+		.denglu-box{
+			margin:15px 0;
+			a{
+				color:#00a862;
+				font-size:1.6rem;
+				margin-right:24px;
+			}
+			.register{
+				border: 1px solid #00A862;
+	    		border-radius: 48px;
+	    		padding:6px 13px;
+			}
+		}
+		.copyright{
+			margin:100px 0 30px;
+			a{
+				font-size:1.4rem;
+				line-height:160%;
+				color:rgba(0,0,0,0.39);
+			}
+		}
+	}
+}
+
+
+
+@media (min-width: 1025px){
+	#nav {
+    background: #FFF;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+    left: 0;
+    position: fixed  !important;
+    top: 0;
+    width: 30% !important;
+    height:2000px;
+    float:left;
+    box-shadow:2px 2px 2px rgba(0,0,0,0.1) !important;
+    z-index:100;
+    > .nav-box {
+    	height:100%;
+    }
+	}
+	#content {
+    width: 70%;
+    height:100%;
+    float:right;
+    margin-top:0px  !important;
+	}
+
+}
+
+
+@media (max-width: 1024px){
+	#nav {
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+	}
+	.title-land-wrapper{
+		margin-top:30px !important;
+		margin-left:24px !important;
+		margin-bottom:30px;
+		>span{
+			display:block;
+			font-size: 2.6rem;
+    		font-weight: 700;
+    		margin-bottom:19px !important;
+		}
+		a{
+			color:#00a862;
+			font-size:1.6rem;
+			margin-right:24px;
+		}
+		.register{
+			border: 1px solid #00A862;
+    		border-radius: 48px;
+    		padding:6px 13px;
+		}
+	}
+}
+
+@media (max-width: 640px){
+	.left-content-menu,
+	.land-box {
+		display:none;
+	}
+	.title-coffee{
+		margin-top:6px !important;
+		margin-bottom:7px !important;
+	}
+	.foot-menu{
+		display:block !important;
+	}
+}
+
+
+#content{
+	position:relative;
+	overflow:hidden;
+	background-color:#f8f8f8;
+	.tag-ad{
+		position: absolute;
+	    top: 10px;
+	    right: 10px;
+	    padding: 0px 6px;
+	    color: #fff;
+	    background-color: #000;
+	    font-size: 1.2rem;
+	    line-height: 180%;
+	    opacity: 0.6;
+	    border-radius: 2px;
+	    z-index: 200;
+	}
+	// 三张图片
+	.theme{
+		width:100%;
+		padding:30px 20px 0;
+		.item {
+			display:block;
+			overflow:hidden;
+			height:100%;
+			margin:20px 0;
+			padding:10px;
+			transition:all .2s linear;
+    		border-radius: 2px;
+			&:hover{
+				margin-top:13px;
+			}
+			img {
+				width:100%;
+				height:100%;
+			}
+		}
+	}
+	// 俱乐部
+	.club{
+		padding:30px 0px;
+		background-color:#fff;
+		width:100%;
+		p{
+			font-size:16px;
+			color:#888;
+			margin:12px 0px;
+			line-height:2;
+			a{
+				color:#c2a661;
+				&:hover{
+					text-decoration:none;
+				}
+				i{
+					font-size:5px;
+				}
+			}
+		}
+		.denglu{
+			> a {
+				display:inline-block;
+				padding:6px 18px;
+				border:1px solid #1ab172;
+   				color: #1ab172;
+   				font-size:18px;
+   				margin-right:6px;
+   				border-radius:48px;
+			}
+		}
+		.rewords{
+			img{
+				margin-top:70px;
+			}
+		}
+	}
+}
+
+// 星巴克精选
+.great-choice{
+	text-align:center;
+	padding:20px 0px 0px;
+	width:100%;
+	> row{
+		margin:30px 15px;
+	}
+	.choice-title{
+		margin-bottom:66px;
+		> p {
+			color:#888;
+		}
+	}
+	.items{
+		a{
+			margin-bottom:55px;
+			transition:all .3s;
+		&:hover{
+			margin-top:-10px;
+		}
+		>div{
+			display:block;
+			padding-bottom:14px;
+			background-color:#fff;
+			box-shadow: darkgrey 2px 2px 9px 1px ;
+			border-radius:2px;
+			position:relative;
+			> img{
+				margin-top: -48px;
+  			  	height: 72px;
+    			margin-bottom: -24px;
+				}
+			>h4{
+				margin-top:35px;
+				color:#000;
+				font-weight:600;
+				margin-bottom:19px;
+			}
+			>p{
+				line-height:1.3;
+				color:#888;
+				font-size:16px;
+			}
+			>span{
+				color:#c2a661;
+				line-height:3;
+				font-size:14px;
+			}
+			}
+		}
+	}
+}
+
+// 咖啡星讲堂
+.classroom{
+	position:relative;
+	background-color:#fcfcfd;
+	.arr{
+		border-radius: 50%;
+	    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+	    box-sizing: border-box;
+	    background: white;
+	    cursor: pointer;
+	    height: 28.8px;
+	    margin-top: -16px;
+	    position: absolute;
+	    padding: 2px 0px;
+	    text-align: center;
+	    top: 60%;
+	    width: 28.8px;
+	    z-index: 1;
+	    transition:all .4s;
+	}
+	.arr-left{
+		left:24px;
+		display:none;
+		&:hover{
+			left:20px;
+			box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.12);
+		}
+	}
+	.arr-right{
+		right:24px;
+		&:hover{
+			right:20px;
+			box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.12);
+		}
+	}
+	.coffee-know{
+        margin-left:17%;
+        width:600%;
+        overflow:hidden;
+        transition:all .6s;
+	>a{
+		float:left;
+		background: #FFF;
+	    border-radius: 2px;
+	    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.12);
+	    display: block;
+	    overflow: hidden;
+	    position: relative;
+	    padding: 18px;
+	    margin-bottom:40px;
+	    margin-right:15px;
+	    width:288px;
+	    transition:all .4s;
+	    &:hover{
+	    	margin-top:-5px;
+	    }
+	    >div{
+	    	margin-top: -18px;
+    		margin-left: -19px;
+    		background-position: center center;
+		    background-size: cover;
+		    overflow: hidden;
+		    display: inline-block;
+		    margin: 0 auto 6px;
+		    height: 168px;
+    		width: 120%;
+    		margin-top: -18px;
+    		margin-left: -19px;
+	    }
+	    >span{
+	    	font-size: 1.4rem;
+		    background: #C2A661;
+		    color: #FFF;
+		    position: absolute;
+		    padding: 4px 12px;
+		    left: 0px;
+		    top: 6px;
+	    }
+	    >strong{
+	    	font-weight:normal;
+	    	line-height:1.2;
+	    	text-align:left;
+	    	display:block;
+	    	color:#111;
+	    	font-size:15px;
+	    }
+	}
+	}
+}
+
+// 底部菜单
+.foot-menu{
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:100%;
+	display:none;
+	height:55px;
+	background-color:#fff;
+	ul{
+		width:100%;
+		height:55px;
+		padding-left:0;
+	}
+	li{
+		width:20%;
+		float:left;
+		list-style:none;
+		a{
+			display:block;
+			font-size: 1.2rem;
+		    line-height: 1;
+		    padding: 6px 4px;
+		    text-align:left;
+		   	text-align:center;
+		    height:55px;
+		    color:#666;
+		}
+	}
+}
